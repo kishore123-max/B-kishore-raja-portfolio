@@ -1,0 +1,342 @@
+/* ===========================
+   Google Font
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#111827;
+    z-index:1000;
+}
+
+.navbar{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:32px;
+    color:white;
+}
+
+.logo span{
+    color:#38bdf8;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero{
+    width:90%;
+    margin:120px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.hero-text{
+    width:55%;
+}
+
+.hero-text h3{
+    font-size:25px;
+}
+
+.hero-text h1{
+    font-size:60px;
+    color:#38bdf8;
+}
+
+.hero-text h2{
+    margin:15px 0;
+    font-size:35px;
+}
+
+.hero-text p{
+    line-height:30px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:8px;
+    transition:.4s;
+}
+
+.btn:hover{
+    background:#2563eb;
+}
+
+.hero-image img{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #38bdf8;
+}
+
+/* ===========================
+   Sections
+=========================== */
+
+section{
+    width:90%;
+    margin:80px auto;
+}
+
+.heading{
+    text-align:center;
+    font-size:40px;
+    color:#38bdf8;
+    margin-bottom:40px;
+}
+
+/* ===========================
+   About
+=========================== */
+
+#about p{
+    text-align:center;
+    line-height:32px;
+    font-size:18px;
+}
+
+/* ===========================
+   Skills
+=========================== */
+
+.skill p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.bar{
+    width:100%;
+    background:#374151;
+    height:12px;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+.bar div{
+    height:12px;
+    border-radius:20px;
+    background:#38bdf8;
+}
+
+.html{
+    width:95%;
+}
+
+.css{
+    width:90%;
+}
+
+.javascript{
+    width:80%;
+}
+
+.git{
+    width:75%;
+}
+
+.github{
+    width:75%;
+}
+
+.figma{
+    width:80%;
+}
+
+/* ===========================
+   Projects
+=========================== */
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    transition:.4s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #38bdf8;
+}
+
+.card h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.card p{
+    margin-bottom:20px;
+    line-height:28px;
+}
+
+.card a{
+    display:inline-block;
+    margin:8px;
+    padding:10px 18px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+/* ===========================
+   Contact
+=========================== */
+
+form{
+    width:60%;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:15px;
+    margin:15px 0;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+}
+
+form button{
+    width:100%;
+    padding:15px;
+    background:#38bdf8;
+    color:white;
+    border:none;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+form button:hover{
+    background:#2563eb;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+.social{
+    margin-bottom:20px;
+}
+
+.social a{
+    color:white;
+    font-size:28px;
+    margin:0 15px;
+    transition:.3s;
+}
+
+.social a:hover{
+    color:#38bdf8;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+}
+
+.nav-links{
+    margin-top:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text,
+.hero-image{
+    width:100%;
+}
+
+.hero-text h1{
+    font-size:45px;
+}
+
+.hero-image img{
+    width:250px;
+    height:250px;
+}
+
+form{
+    width:100%;
+}
+
+}
